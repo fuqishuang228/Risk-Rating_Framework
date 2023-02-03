@@ -79,40 +79,41 @@ To run this code fully, you will need these repositories. We have been running o
 
 (2)Contents
     	
---Folder1:Score_Calculation
-  In folder1, there are some code file to help calculate 3 kind of suspiciousness.
+		--Folder1:Score_Calculation
+    	In folder1, there are some code file to help calculate 3 kind of suspiciousness.
     
-   1)lfspan_susp:
-     a. cal_acc_lifespan.py
-	This script will calculate account lifespan with the account information and transaction information.
+    	1)lfspan_susp:
+        a. cal_acc_lifespan.py
+		This script will calculate account lifespan with the account information and transaction information.
 
-     b. cal_score_lfspan.py
-        This script will calculate lfspan_suspic of transactions with the transaction information and account lifespan information.
+	    b. cal_score_lfspan.py
+		This script will calculate lfspan_suspic of transactions with the transaction information and account lifespan information.
 
-   2)wash_susp:
-     a. cal_Tx_number_per_acc.py
-	This script will calculate number of accounts traded on account with the account information and transaction information.
+    2)wash_susp:
+        a. cal_Tx_number_per_acc.py
+		This script will calculate number of accounts traded on account with the account information and transaction information.
 
-     b. cal_wash.py
-	This script will calculate wash frequency of account with the transaction information and number of accounts traded on account.
+	    b. cal_wash.py
+		This script will calculate wash frequency of account with the transaction information and number of accounts traded on account.
 
-     c. cal_score_wash.py
-	This script will calculate wash_suspic of transactions with the transaction information and account wash frequeny.
+	    c. cal_score_wash.py
+		This script will calculate wash_suspic of transactions with the transaction information and account wash frequeny.
 
     3)anonymy_susp:
-     a. cal_score_anonymy.py
-	This script will calculate anonymy_suspic of transactions with the transaction information and account information.
---Folder2:Risk_Rating
-  In folder2, there are some code file to rate account risk with 3 kinds of suspiciousness metrics reapectively.
+        a. cal_score_anonymy.py
+		This script will calculate anonymy_suspic of transactions with the transaction information and account information.
 
-   1)Score_Lifespan_Risk_Rating.py
-     This script will calculate risk of accounts with our risk rating method of lfspn_suspic.
+    --Folder2:Risk_Rating
+    In folder2, there are some code file to rate account risk with 3 kinds of suspiciousness metrics reapectively.
 
-   2)Score_Wash_Risk_Rating.py
-     This script will calculate risk of accounts with our risk rating method of wash_suspic.
+    1)Score_Lifespan_Risk_Rating.py
+    This script will calculate risk of accounts with our risk rating method of lfspn_suspic.
 
-   3)Score_Anony_Risk_Rating.py
-     This script will calculate risk of accounts with our risk rating method of anonymy_suspic.
+    2)Score_Wash_Risk_Rating.py
+    This script will calculate risk of accounts with our risk rating method of wash_suspic.
+
+    3)Score_Anony_Risk_Rating.py
+    This script will calculate risk of accounts with our risk rating method of anonymy_suspic.
     
 ===============================================================================================================================================
 
@@ -156,8 +157,8 @@ To run this code fully, you will need these repositories. We have been running o
 		3. out_degree: 账户的转账次数
 		4. in_degree: 账户的入账次数
 		5. all_degree: 账户的交易次数
-        	6. Tx_Acc_Num: 账户交易的账户数量
-        	7. Acc_wash_freq: 账户刷量频率
+        6. Tx_Acc_Num: 账户交易的账户数量
+        7. Acc_wash_freq: 账户刷量频率
 		8. label: 账户的标签
         总和：8列
 	-行：
@@ -170,11 +171,11 @@ To run this code fully, you will need these repositories. We have been running o
 		3. address_to: 入账账户的地址
 		4. index_from: 转账账户的序号
 		5. index_to: 入账账户的序号
-        	6. timestamp：交易时间
-        	7. value: 交易的ETH金额
+        6. timestamp：交易时间
+        7. value: 交易的ETH金额
 		8. score_anonymy: 交易的匿名分数
 		9. score_life_span: 交易的生命周期分数
-        	10.score_wash: 交易的刷量分数
+        10.score_wash: 交易的刷量分数
 		总和：10列
 	-行：
 		每一行代表一次交易信息
@@ -197,8 +198,8 @@ To run this code fully, you will need these repositories. We have been running o
         a. cal_acc_lifespan.py 
         这个代码文件输入了账户信息和交易信息，计算账户的生命周期。
 	
-	b. cal_score_lfspan.py
-	这个代码文件输入交易信息和账户生命周期，计算交易的lfsp_suspic。
+	    b. cal_score_lfspan.py
+		这个代码文件输入交易信息和账户生命周期，计算交易的lfsp_suspic。
 
     2)wash_susp:
         a. cal_Tx_number_per_acc.py 
@@ -207,7 +208,7 @@ To run this code fully, you will need these repositories. We have been running o
         b. cal_wash.py
         这个代码文件输入账户信息和账和一个账户的平均交易数量，计算账户的刷量频率。
 
-        c. cal_score_wash.py
+        b. cal_score_wash.py
         这个代码文件输入交易信息和账和一个账户的平均交易数量，计算交易的wash_suspic。
 
     3)anonymy_susp:
